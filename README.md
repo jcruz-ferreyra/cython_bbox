@@ -21,3 +21,10 @@ overlaps = bbox_overlaps(
     )
 
 ```
+
+## Custom fork (jcruz-ferreyra)
+
+I downloaded tar.gz file from PyPI and did the modifications for windows support decribed here:
+https://stackoverflow.com/questions/60349980/is-there-a-way-to-install-cython-bbox-for-windows
+
+I also change line 12 in src/cython_bbox.pyx. As "np.float" was deprecated I need to change it to just "float".
